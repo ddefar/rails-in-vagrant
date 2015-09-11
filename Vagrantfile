@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "openssl"
     chef.add_recipe "imagemagick"
     chef.add_recipe "runit"
-    #chef.add_recipe "nginx"
+    chef.add_recipe "nodejs"
     chef.add_recipe "postgresql::server"
     chef.add_recipe "rvm::user"
     #chef.add_recipe "rvm::system_install"

@@ -5,7 +5,7 @@ cookbook 'build-essential'
 cookbook 'openssl'
 cookbook 'imagemagick'
 cookbook 'runit'
-#cookbook 'nginx'
+cookbook 'nodejs'
 cookbook 'postgresql'
 cookbook 'rvm', '~> 0.9.4'
 #cookbook 'rvm',

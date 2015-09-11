@@ -11,6 +11,6 @@ bash "create sample app" do
     cd /vagrant
     rails new getting-started
     cd getting-started
-    rails s -p 0.0.0.0
+    rails s -b 0.0.0.0
   EOH
 end
