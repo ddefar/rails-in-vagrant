@@ -22,6 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "openssl"
     chef.add_recipe "imagemagick"
     chef.add_recipe "runit"
+    #chef.add_recipe "nginx"
     chef.add_recipe "postgresql::server"
     chef.add_recipe "rvm::user"
     #chef.add_recipe "rvm::system_install"
@@ -40,7 +41,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             default_ruby: 'ruby-2.1.2',
             user: 'vagrant',
             code: 'rvm use 2.1.2',
-            global_gems: [{name: 'rake'}, {name: 'bundler'}]
+            global_gems: [{name: 'rake'}, {name: 'bundler'}, {name: 'rails'}]
         }]
       },
 
@@ -50,6 +51,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
   end
 
-  config.vm.provision :shell, :privileged => false, :path => "bootstrap.sh"
+  #config.vm.provision :shell, :privileged => false, :path => "bootstrap.sh"
     
 end

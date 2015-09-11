@@ -37,7 +37,7 @@ To power down the virtual machine:
 
 More on teardown can be found here: [Vagrant teardown] (https://docs.vagrantup.com/v2/getting-started/teardown.html)
 
-While your guest machine is up and running, you can ssh to it with `vagrant ssh`. The `/vagrant` directory on the virtual machine is shared with your host's project root directory by default. If you navigate to `/vagrant/getting-started`, and start your rails server, the sample app included in this project should be available on your host machine at *http://localhost:3333*.
+While your guest machine is up and running, you can ssh to it with `vagrant ssh`. The `/vagrant` directory on the virtual machine is shared with your host's project root directory by default. If you navigate to `/vagrant/getting-started`, and start your rails server, the sample app included in this project should be available on your host machine at *http://localhost:3000*.
 
 
 
