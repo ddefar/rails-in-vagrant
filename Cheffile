@@ -1,0 +1,12 @@
+site "http://community.opscode.com/api/v1"
+cookbook 'apt'
+cookbook 'git'
+cookbook 'build-essential'
+cookbook 'openssl'
+cookbook 'imagemagick'
+cookbook 'runit'
+cookbook 'postgresql'
+cookbook 'rvm', '~> 0.9.4'
+#cookbook 'rvm',
+#  :git => 'git://github.com/fnichol/chef-rvm.git'
+cookbook 'vim'
