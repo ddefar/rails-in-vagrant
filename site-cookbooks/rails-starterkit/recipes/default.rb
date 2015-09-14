@@ -7,10 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 bash "create sample app" do
-  code <<-EOH
-    cd /vagrant
-    rails new getting-started
-    cd getting-started
-    rails s -b 0.0.0.0
-  EOH
+	cwd ::File.dirname('/vagrant')
+	code <<-EOH
+	  rails new getting-started
+	  cd getting-started
+	  rails s -b 0.0.0.0
+	EOH
 end

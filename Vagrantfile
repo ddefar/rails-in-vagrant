@@ -28,7 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #chef.add_recipe "rvm::system_install"
     chef.add_recipe 'rvm::gem_package'
     chef.add_recipe "vim"
-    chef.add_recipe "rails-starterkit"
+    #chef.add_recipe "rails-starterkit"
       
     chef.json = {
       
